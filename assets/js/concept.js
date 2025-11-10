@@ -37,10 +37,10 @@ function viewGallery(src, order){
     else if(index > 0){
         left.style.display = "block";
     }
-    if(index == 6){
+    if(index == 15){
         right.style.display = "none";
     }
-    else if(index < 6){
+    else if(index < 15){
         right.style.display = "block";
     }
 }
@@ -53,7 +53,7 @@ right.onclick = function(){
     if(index > 0){
         left.style.display = "block"
     }
-    if(index == 6){
+    if(index == 15){
         right.style.display ="none";
     }
 }
@@ -62,7 +62,7 @@ left.onclick = function(){
     index--;
     console.log(index)
     modal.querySelector("#gallery-portrait").src = conceptImages[index];
-    if(index < 6){
+    if(index < 15){
         right.style.display = "block"
     }
     if(index == 0){

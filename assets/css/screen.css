@@ -2,233 +2,239 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Kathiega', sans-serif; */
-    font-family: 'Taruno Wide', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
-    width: 100%;
     height: auto;
     min-height: 100vh;
-    display: flex;
-    background-color: #f6effe;
+    background-color: #FEE9FF;
+    width: 100%;
 }
 
-::-webkit-scrollbar {
-    width: 20px;
+/* BANNER */
+.banner{
+    position: relative;
+    color: white;
+}
+#banner-image{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+#title-text{
+    /* font-family: 'Brundox', sans-serif; */
+    font-family: 'Astori', sans-serif;
+    font-size: 15vw;
+    position: absolute; /*centering text over banner image*/
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-::-webkit-scrollbar-track {
-    background: #e4cdfe; 
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(#7F34E0, #ce82ff); 
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(#5819aa, #a844eb); 
-}
-
-/* css for menu */
-#menu-column{
-    width: 17%;
-    height: 100%;
-    /* background-color: paleturquoise;  */
-    top: 0;
-    position: sticky;
-}
-
-#logo{
-    width: 10vw;
-    margin: 20% 20% 0% 20%;
-    border: transparent;
-    border-radius: 100%;
-}
-
-ul {
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 1vw;
-    margin: 10% 15%;
-}
-
-li a {
-    display: block;
-    color: black;
-    padding: 5%;
-    text-decoration: none;
-}
-
-.web-title{
-    display: block;
-    color: black;
-    text-decoration: none;
-}
-
-.web-title:hover{
-    color: #7F34E0;
-}
-
-li a.active {
-    color: #7F34E0;
-}
-
-li a:hover:not(.active) {
-    color: #7F34E0;
-}
-
-a{
-    text-decoration: none;
-}
-
+/* ICONS */
 #sm-icons{
-    text-align: center;
-    font-size: 1.5vw;
-    width: 65%;
+    position: absolute; /* positioning of the icon group on top of banner*/
+    top: 80%;
+    left: 85%;
+    font-size: 5vw;
+    width: 15vw;
     /* background-color: antiquewhite; */
-    float: left;
-    /* margin: auto; */
+    transform: translate(-10%, -10%);
 }
-
+/* itch.io icon css */
 #itch-io{
     content: url("../images/icons/itch-io-white.svg");
-    width: 1.5vw;
-    height: 1.5vw;
-    padding: 2.5%;
-    margin: 0% 2%;
-    background: linear-gradient(#7F34E0, #ce82ff);
+    width: 3vw;
+    height: 3vw;
     border-radius: 10px;
+    background-color: #EDB0F1;
+    padding: 2%;
     color: white;
 }
-
+/* github icon css */
 #github{
     content: url("../images/icons/github-white.svg");
-    width: 1.5vw;
-    height: 1.5vw;
-    padding: 2.5%;
-    margin: 0% 2%;
-    background: linear-gradient(#7F34E0, #ce82ff);
+    width: 3vw;
+    height: 3vw;
     border-radius: 10px;
+    background-color: #EDB0F1;
+    padding: 2%;
     color: white;
 }
-
-
+/* linkedin icon css */
 #linkedin{
     content: url("../images/icons/linkedin-white.svg");
-    width: 1.5vw;
-    height: 1.5vw;
-    padding: 2.5%;
-    margin: 0% 2%;
-    background: linear-gradient(#7F34E0, #ce82ff);
+    width: 3vw; 
+    height: 3vw;
     border-radius: 10px;
+    background-color: #EDB0F1;
+    padding: 2%;
     color: white;
 }
 
+/* SCROLL BAR */
+/* scrollbar width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* scrollbar track bg colour */
+::-webkit-scrollbar-track {
+    background-color: #edffaa; 
+}
+/* scrollbar*/
+::-webkit-scrollbar-thumb {
+    background: #EDB0F1; 
+    border-radius: 5px; /* border corner rouding */
+}
+/* scrollbar colour when hovering */
+::-webkit-scrollbar-thumb:hover {
+    background: #D937E5; 
+}
+/* corner where 2 scrollbars meet */
+::-webkit-scrollbar-corner{
+    background: #edffaa;
+}
+
+
+
+/* MENU */
+/* menu container */
+.menu{ 
+    margin-top: -5px;
+    width: 100%;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size: 1.5vw;
+}
+/* main menu backround */
+ul {
+    margin-top: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #EDB0F1;
+    display: flex;
+    justify-content: space-between;
+}
+/* individual menu parts */
+ul li {
+    width: 16%;
+    /* background-color: red; */
+}
+/* text of menu */
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+}
+/* active menu part */
+li a.active {
+    color: #D937E5;
+    background-color: #EDFFAA;
+    border-left: solid 5px; 
+    border-right: solid 5px;
+}
+/* hover (does not vork on active menu part) */
+li a:hover:not(.active) {
+    color: #D937E5;
+}
+/* no underline in menu links */
+a{
+    text-decoration: none;
+    color: white;
+}
+/* mobile menu not displayed when on bigger screen */
 #mobile-menu{
     display: none;
 }
 
-/* css for traditional, digital, 3D, CHD and concept grid  */
-.grid-container{
-    width: 83%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1%;
-    padding-top: 1%;
-    padding-right: 1%;
-    box-sizing: border-box;
-    /* background-color: rgb(212, 167, 255); */
+/* DIGITAL, TRADITIONAL, CONCEPT, MODELLING */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px; /*padding on the edge of the whole grid on the right and left*/
+}
+  /* Create three equal columns that sits next to each other */
+.column {
+    flex: 32%; 
+    padding: 0 5px; /*padding on the right and left*/
+}
+.column img {
+    margin-top: 10px; /*space on top of the images*/
+    vertical-align: middle;
+    width: 100%; /*making images fit the column by width*/
 }
 
-.grid-img{
+/* ABOUT PAGE */
+.container{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* padding: 0% 1% 1% 0%; */
+    /* background-color: red; */
+    padding: 10px;
+    font-family: 'Ubuntu Mono', sans-serif;
 }
 
-/* css for web */
-.grid-container-web{
-    width: 83%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1%;
-    padding-top: 1%;
-    padding-right: 1%;
-    box-sizing: border-box;
-    /* background-color: rgb(212, 167, 255); */
+#about-img{
+    width: 30%;
+    float: left;
 }
 
+#about-text{
+    float: left;
+    width: 70%;
+    /* background-color: blue; */
+    padding: 0 15px;
+    text-align: center;
+}
+#name{
+    font-size: 3vw;
+}
+
+#about-me{
+    font-size: 1.5vw;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#apps-showcase{
+    float: left;
+    width: 70%;
+    margin-top: 5%;
+    background-color: green;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* WEB */
+/* colour of the project titles */
+.web-title{
+    color: #D937E5;
+}
 .grid-img-web{
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    /* padding: 0% 1% 1% 0%; */
+    margin-bottom: 10px;
 }
-
-.detail-grid{
-    display:grid;
-    gap: 1%;
-    padding-top: 1%;
-    padding-right: 1%;
-    width: 83%;
-    height: 100%;
-    grid-template-columns: 1fr 1fr;
+.thumbnail{
+    width: 40%;
+    float: left;
+    margin-right: 15px;
+}
+#description{
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 1.5vw;
+    text-align: left;
 }
 
 .title{
+    /* background-color: green; */
     text-align: left;
 }
 
 .detail{
-    font-family: 'PP Air', sans-serif;
+    font-size: 1.5vw;
+    margin-top: 10px;
     text-align: left;
-    font-size: 1.5vw;
-    padding-top: 2%;
-}
-
-.detail i{
-    font-family: 'PP Air Italic', sans-serif;
-}
-
-.examples{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* css for about page */
-.grid-container-about{
-    width: 83%;
-    height: 100%;
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    gap: 1%;
-    padding-top: 1%;
-    padding-right: 1%;
-    /* background-color: rgb(212, 167, 255); */
-}
-
-#name{
-    text-align: center;
-    font-size: 2vw;
-}
-
-#about-me{
-    font-family: 'PP Air', sans-serif;
-    font-size: 1.5vw;
-    padding-top: 4%;
-}
-
-#about-img{
-    width: 70%;
-    padding: 0% 5% 0% 5%;
 }
 
 /* modal css */
@@ -285,8 +291,10 @@ a{
 
 #gallery-portrait{
     display: block;
-    margin: 0 auto;
-    height: 100vh;
+    margin: auto;
+    max-width: 80vw;
+    max-height: 100vh;
+
 }
 
 /* css for tablet */

@@ -5,49 +5,58 @@
         <meta name="author" content="Erika Rechtackova">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alieri</title>
-        <link href="assets/css/screen.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="assets/images/alien.ico">
-        <link href="https://fonts.cdnfonts.com/css/pp-air" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/taruno-wide" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="assets/css/screen.css" rel="stylesheet"> <!--linking stylesheet-->
+        <link rel="icon" type="image/x-icon" href="assets/images/alien.ico"> <!--Web icon-->
+        <link href="https://fonts.cdnfonts.com/css/brundox" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/ubuntu-mono" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/astori" rel="stylesheet"> <!--font link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--stylesheet for the icons in menu-->
     </head>
     <body>
-        <div id="menu-column">
-            <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
-            <a href="about.html"><img id="logo" alt="Self portrait Logo" src="assets/images/tvGirl.png"></a>
-            <nav>
-                <ul id="mylinks">
-                    <li><a href="about.html">HOME</a></li>
-                    <li><a href="index.html">Digital Art</a></li>
-                    <li><a class="active" href="traditional.html">Traditional Art</a></li>
-                    <li><a href="concept.html">Concept Art</a></li>
-                    <li><a href="modeling.html">3D Modeling</a></li>
-                    <li><a href="character.html">Character Design</a></li>
-                    <li><a href="web.html">Other</a></li>
-                    
-                </ul>
-            </nav>
+        <div class="banner">
+            <img id="banner-image" src="assets/images/banner.PNG">
+            <a id="title-text" href="about.html">ALIERI</a>
             <div id="sm-icons">
                 <a href="https://alieri.itch.io/" id="itch-io"></a>
                 <a href="https://github.com/RickyRechtackova" id="github"></a>
                 <a href="https://www.linkedin.com/in/erika-%C5%99echt%C3%A1%C4%8Dkov%C3%A1-580588252/" id="linkedin"></a>
             </div>
-            
+        </div>
+        <div class="menu">
+            <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
+            <nav>
+                <ul id="mylinks">
+                    <li><a href="about.html">HOME</a></li>
+                    <li><a href="index.html">DIGITAL ART</a></li>
+                    <li><a class="active" href="traditional.html">TRADITIONAL ART</a></li>
+                    <li><a href="concept.html">CONCEPT ART</a></li>
+                    <li><a href="modeling.html">3D MODELLING</a></li>
+                    <li><a href="web.html">OTHER</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <div id="traditional-grid" class="grid-container">
-            <div><img alt="watercolour painting of bald person with no eyes holding eyes in hands" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0006.jpg"></div>
-            <div><img alt="watercolour painting of side profile head falling into mechanical gears" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0001.jpg"></div>
-            <div><img alt="pencil still art drawing of a vase and wooden logs" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0002.jpg"></div>
-            <div><img alt="pastel still art painting of bananas and apples" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0003.jpg"></div>
-            <div><img alt="watercolour still art painting of table with cake and tea cup" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0005.jpg"></div>
-            <div><img alt="acrylic paintting of sunset over sea" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0007.jpg"></div>
-            <div><img alt="acrylic painting of Severus Snape" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0008.jpg"></div>
-            <div><img alt="acrylic painting of landscape with mushroom house and swing on a tree" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0009.jpg"></div>
-            <div><img alt="acrylic painting of black and white person with colourful circle background" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0011.jpg"></div>
-            <div><img alt="oil painting of Alex Vause" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0012.jpg"></div>
-            <div><img alt="watercolour painting of a cyborg woman" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0016.jpg"></div>
-            <div><img alt="watercolour painting of a woman being overgrown by nature" class="grid-img" src="assets/images/Traditional/IMG-20240304-WA0017.jpg"></div>  
+        <div id="traditional-grid"></div>
+            <div class="row">
+                <div class="column">
+                    <img alt="watercolour painting of bald person with no eyes holding eyes in hands" src="assets/images/Traditional/IMG-20240304-WA0006.jpg">
+                    <img alt="pastel still art painting of bananas and apples" src="assets/images/Traditional/IMG-20240304-WA0003.jpg">
+                    <img alt="acrylic painting of Severus Snape" src="assets/images/Traditional/IMG-20240304-WA0008.jpg">
+                    <img alt="oil painting of Alex Vause" src="assets/images/Traditional/IMG-20240304-WA0012.jpg">
+                </div>
+                <div class="column">
+                    <img alt="watercolour still art painting of table with cake and tea cup" src="assets/images/Traditional/IMG-20240304-WA0005.jpg">
+                    <img alt="watercolour painting of side profile head falling into mechanical gears" src="assets/images/Traditional/IMG-20240304-WA0001.jpg">
+                    <img alt="acrylic painting of landscape with mushroom house and swing on a tree" src="assets/images/Traditional/IMG-20240304-WA0009.jpg">
+                    <img alt="acrylic painting of black and white person with colourful circle background" src="assets/images/Traditional/IMG-20240304-WA0011.jpg">
+                </div>
+                <div class="column">
+                    <img alt="watercolour painting of a woman being overgrown by nature" src="assets/images/Traditional/IMG-20240304-WA0017.jpg">
+                    <img alt="pencil still art drawing of a vase and wooden logs" src="assets/images/Traditional/IMG-20240304-WA0002.jpg">
+                    <img alt="acrylic paintting of sunset over sea" src="assets/images/Traditional/IMG-20240304-WA0007.jpg">  
+                    <img alt="watercolour painting of a cyborg woman" src="assets/images/Traditional/IMG-20240304-WA0016.jpg"> 
+                </div>
+            </div>
         </div>
 
         <div id="myModal" class="modal">

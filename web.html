@@ -5,43 +5,46 @@
         <meta name="author" content="Erika Rechtackova">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alieri</title>
-        <link href="assets/css/screen.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="assets/images/alien.ico">
-        <link href="https://fonts.cdnfonts.com/css/pp-air" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/taruno-wide" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="assets/css/screen.css" rel="stylesheet"> <!--linking stylesheet-->
+        <link rel="icon" type="image/x-icon" href="assets/images/alien.ico"> <!--Web icon-->
+        <link href="https://fonts.cdnfonts.com/css/brundox" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/ubuntu-mono" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/astori" rel="stylesheet"> <!--font link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--stylesheet for the icons in menu-->
     </head>
     <body>
-        <div id="menu-column">
-            <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
-            <a href="about.html"><img id="logo" alt="Self portrait Logo" src="assets/images/tvGirl.png"></a>
-            <nav>
-                <ul id="mylinks">
-                    <li><a  href="about.html">HOME</a></li>
-                    <li><a href="index.html">Digital Art</a></li>
-                    <li><a href="traditional.html">Traditional Art</a></li>
-                    <li><a href="concept.html">Concept Art</a></li>
-                    <li><a href="modeling.html">3D Modeling</a></li>
-                    <li><a href="character.html">Character Design</a></li>
-                    <li><a class="active" href="web.html">Other</a></li>
-                    
-                </ul>
-            </nav>
+        <div class="banner">
+            <img id="banner-image" src="assets/images/banner.PNG">
+            <a id="title-text" href="about.html">ALIERI</a>
             <div id="sm-icons">
                 <a href="https://alieri.itch.io/" id="itch-io"></a>
                 <a href="https://github.com/RickyRechtackova" id="github"></a>
                 <a href="https://www.linkedin.com/in/erika-%C5%99echt%C3%A1%C4%8Dkov%C3%A1-580588252/" id="linkedin"></a>
             </div>
         </div>
-
-        <div class="grid-container-web">
-            <div><a href="https://reachu.itch.io/spirit-bath-house" class="web-title"><img class="grid-img-web" src="assets/images/Web/spiritBathhouse.png"> <h2>Spirit Bathhouse</h2></a></div>
-            <div><a href="https://matak12m.itch.io/rivals-passion" class="web-title"><img class="grid-img-web" src="assets/images/Web/fullMenuScreen.png"> <h2>Rival's Passion</h2></a></div>
-            <div><a href="hippieDetail.html" class="web-title"><img class="grid-img-web" src="assets/images/Web/hippieThumbnail.png"> <h2>Hippie Movement</h2></a></div>
-            <div><a href="timeGame.html" class="web-title"><img class="grid-img-web" src="assets/images/Web/timeGame.png"> <h2>Time Game</h2></a></div>
-            <div><a href="suzanne.html" class="web-title"><img class="grid-img-web" src="assets/images/Web/SCThumbnail.png"> <h2>Suzanne Collins</h2></a></div>
+        <div class="menu">
+            <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
+            <nav>
+                <ul id="mylinks">
+                    <li><a href="about.html">HOME</a></li>
+                    <li><a href="index.html">DIGITAL ART</a></li>
+                    <li><a href="traditional.html">TRADITIONAL ART</a></li>
+                    <li><a href="concept.html">CONCEPT ART</a></li>
+                    <li><a href="modeling.html">3D MODELLING</a></li>
+                    <li><a class="active" href="web.html">OTHER</a></li>
+                </ul>
+            </nav>
         </div>
-
+        <div class="row">
+            <div class="column">
+                <div><a href="https://reachu.itch.io/spirit-bath-house" class="web-title"><img class="grid-img-web" src="assets/images/Web/spiritBathhouse.png"> <h2>SPIRIT BATHHOUSE</h2></a></div>
+                <div><a href="hippieDetail.html" class="web-title"><img class="grid-img-web" src="assets/images/Web/hippieThumbnail.png"> <h2>HIPPIE MOVEMENT</h2></a></div>
+                <div><a href="suzanne.html" class="web-title"><img class="grid-img-web" src="assets/images/Web/SCThumbnail.png"> <h2>SUZANNE COLLINS</h2></a></div>
+            </div>
+            <div class="column">
+                <div><a href="https://matak12m.itch.io/rivals-passion" class="web-title"><img class="grid-img-web" src="assets/images/Web/fullMenuScreen.png"> <h2>RIVAL'S PASSION</h2></a></div>
+                <div><a href="timeGame.html" class="web-title"><img class="grid-img-web" src="assets/images/Web/timeGame.png"> <h2>TIME GAME</h2></a></div>
+            </div>
         </div>
         <script src="assets/js/web.js"></script>
     </body>

@@ -2,12 +2,12 @@
 let modal = document.getElementById("myModal");
 
 // Get the <span> element that closes the modal
-let close = document.getElementsByClassName("close")[0];
+let close = document.getElementsByClassName("close")[0]; //getting the close button
 
-let right = document.getElementById("button-right");
-let left = document.getElementById("button-left");
+let right = document.getElementById("button-right"); //getting the right button
+let left = document.getElementById("button-left"); //getting the left button
 
-let characterImages = [];
+let characterImages = []; //array of all character images
 let index = 0;
 let imageContainer = document.getElementById("character-grid");
 let children = Array.from(imageContainer.children);
@@ -28,29 +28,30 @@ function setUp(){
 
 function viewGallery(src, order){
     index = order;
-    modal.style.display = "block";
-    modal.querySelector("#gallery-portrait").src = src;
+    modal.style.display = "block"; //by default display left and right button
+    modal.querySelector("#gallery-portrait").src = src; //choose the image source based on what image was clicked on
     console.log(src)
     console.log(index)
     if(index == 0){
-        left.style.display = "none";
+        left.style.display = "none"; //don't display the left button on the first image
     }
     else if(index > 0){
-        left.style.display = "block";
+        left.style.display = "block"; //display left button on other images
     }
     if(index == children.length-1){
-        right.style.display = "none";
+        right.style.display = "none"; //don't display the right button on last image
     }
     else if(index < children.length-1){
-        right.style.display = "block";
+        right.style.display = "block"; //display the right button on other images
     }
 }
 
 //switching through gallery
 right.onclick = function(){
-    index++;
+    index++; //index grows if clicked on right button
     console.log(index)
-    modal.querySelector("#gallery-portrait").src = characterImages[index];
+    modal.querySelector("#gallery-portrait").src = characterImages[index]; //source changes to the next image
+    //checking again for the index to display the right buttons
     if(index > 0){
         left.style.display = "block"
     }
@@ -60,9 +61,10 @@ right.onclick = function(){
 }
 
 left.onclick = function(){
-    index--;
+    index--; //index falls if clicked on left button
     console.log(index)
-    modal.querySelector("#gallery-portrait").src = characterImages[index];
+    modal.querySelector("#gallery-portrait").src = characterImages[index]; //source changes to the previous image
+     //checking again for the index to display the right buttons
     if(index < children.length-1){
         right.style.display = "block"
     }
@@ -70,7 +72,6 @@ left.onclick = function(){
         left.style.display ="none";
     }
 }
-
 
 // When the user clicks on <span> (x), close the modal
 close.onclick = function() {

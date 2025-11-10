@@ -5,44 +5,49 @@
         <meta name="author" content="Erika Rechtackova">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alieri</title>
-        <link href="assets/css/screen.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="assets/images/alien.ico">
-        <link href="https://fonts.cdnfonts.com/css/pp-air" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/taruno-wide" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="assets/css/screen.css" rel="stylesheet"> <!--linking stylesheet-->
+        <link rel="icon" type="image/x-icon" href="assets/images/alien.ico"> <!--Web icon-->
+        <link href="https://fonts.cdnfonts.com/css/brundox" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/ubuntu-mono" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/astori" rel="stylesheet"> <!--font link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--stylesheet for the icons in menu-->
     </head>
     <body>
-        <div id="menu-column">
-            <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
-            <a href="about.html"><img id="logo" alt="Self portrait Logo" src="assets/images/tvGirl.png"></a>
-            <nav>
-                <ul id="mylinks">
-                    <li><a class="active" href="about.html">HOME</a></li>
-                    <li><a href="index.html">Digital Art</a></li>
-                    <li><a href="traditional.html">Traditional Art</a></li>
-                    <li><a href="concept.html">Concept Art</a></li>
-                    <li><a href="modeling.html">3D Modeling</a></li>
-                    <li><a href="character.html">Character Design</a></li>
-                    <li><a href="web.html">Other</a></li>
-                    
-                </ul>
-            </nav>
+        <div class="banner">
+            <img id="banner-image" src="assets/images/banner.PNG">
+            <a id="title-text" href="about.html">ALIERI</a>
             <div id="sm-icons">
                 <a href="https://alieri.itch.io/" id="itch-io"></a>
                 <a href="https://github.com/RickyRechtackova" id="github"></a>
                 <a href="https://www.linkedin.com/in/erika-%C5%99echt%C3%A1%C4%8Dkov%C3%A1-580588252/" id="linkedin"></a>
             </div>
         </div>
-        <div class="grid-container-about">
-            <div id="about-img-container"><img id="about-img" src="assets/images/aboutPicture.jpeg"></div>
-            <div id="about-text">
-                <h1 id="name">Erika Rechtackova</h1>
-                <p id="about-me">I'm a third-year student at SETU Carlow, studying Interactive Digital Art and Design. 
-                I have always been a creative person and dreamed of a creative career. For a long time I thought it wasn't possible for me until I discovered the art of video games. I immediatelly became
-                interested in their creation and the behind the scenes stuff. As I began learning digital art I grew more and more fond of Character creation. Throughout my life I was always making up characters and building their backstories and now I got to build their looks as well.
-            </p>
-            </div>
+        <div class="menu">
+            <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
+            <nav>
+                <ul id="mylinks">
+                    <li><a class="active" href="about.html">HOME</a></li>
+                    <li><a href="index.html">DIGITAL ART</a></li>
+                    <li><a href="traditional.html">TRADITIONAL ART</a></li>
+                    <li><a href="concept.html">CONCEPT ART</a></li>
+                    <li><a href="modeling.html">3D MODELLING</a></li>
+                    <li><a href="web.html">OTHER</a></li>
+                </ul>
+            </nav>
         </div>
+
+        <div class="container">
+            <img id="about-img" src="assets/images/aboutPicture.jpeg">
+            <div id="about-text">
+                <h1 id="name">ERIKA RECHTACKOVA</h1>
+                <p id="about-me">Hi, I'm Erika aka Alieri, a graduate with a bachelor in Interactive Digital Art and Design with a passion for character
+                 design and concept art. I love bringing interesting characters and intriguing stories to life under my hand in all kinds of
+                 media. I started with fine art and ceramics when I was a kid and later discovered the world of digital art.
+                </p>
+            </div>
+            <div id="apps-showcase">
+                <h1 id="name">APPS I WORK WITH</h1>
+            </div>
         </div>
 
         <script src="assets/js/digital.js"></script>
