@@ -103,7 +103,7 @@ body{
 .menu{ 
     margin-top: -5px;
     width: 100%;
-    font-family: 'Ubuntu Mono', sans-serif;
+    font-family: 'Agdasima', sans-serif;
     font-size: 1.5vw;
 }
 /* main menu backround */
@@ -170,7 +170,7 @@ a{
     width: 100%;
     /* background-color: red; */
     padding: 10px;
-    font-family: 'Ubuntu Mono', sans-serif;
+    font-family: 'Agdasima', sans-serif;
 }
 
 #about-img{
@@ -187,21 +187,31 @@ a{
 }
 #name{
     font-size: 3vw;
+    margin-bottom: 2%;
 }
 
 #about-me{
-    font-size: 1.5vw;
-    margin-top: 10px;
+    font-size: 1.7vw;
     text-align: left;
 }
 
 #apps-showcase{
     float: left;
     width: 70%;
-    margin-top: 5%;
-    background-color: green;
+    margin-top: 8%;
+    /* background-color: green; */
     padding: 0 15px;
     text-align: center;
+}
+
+.app-row{
+    display: flex;
+    justify-content: center;
+}
+
+.app-icon{
+    margin: 1%;
+    width: 8%;
 }
 
 /* WEB */
