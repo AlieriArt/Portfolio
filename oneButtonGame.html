@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Erika Rechtackova">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alieri</title>
+        <link href="assets/css/screen.css" rel="stylesheet"> <!--linking stylesheet-->
+        <link rel="icon" type="image/x-icon" href="assets/images/alien.ico"> <!--Web icon-->
+        <link href="https://fonts.cdnfonts.com/css/brundox" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/astori" rel="stylesheet"> <!--font link-->
+        <link href="https://fonts.cdnfonts.com/css/agdasima" rel="stylesheet"> <!--font link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--stylesheet for the icons in menu-->
+    </head>
+    <body>
+        <div class="banner">
+            <img id="banner-image" src="assets/images/banner.PNG">
+            <a id="title-text" href="about.html">ALIERI</a>
+            <div id="sm-icons">
+                <a href="https://alieri.itch.io/" id="itch-io"></a>
+                <a href="https://github.com/RickyRechtackova" id="github"></a>
+                <a href="https://www.linkedin.com/in/erika-%C5%99echt%C3%A1%C4%8Dkov%C3%A1-580588252/" id="linkedin"></a>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
+            <nav>
+                <ul id="mylinks">
+                    <li><a href="about.html">HOME</a></li>
+                    <li><a href="index.html">DIGITAL ART</a></li>
+                    <li><a href="traditional.html">TRADITIONAL ART</a></li>
+                    <li><a href="concept.html">CONCEPT ART</a></li>
+                    <li><a href="modeling.html">3D MODELLING</a></li>
+                    <li><a class="active" href="web.html">PROJECTS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div id="description">  
+                <img class="thumbnail" src="assets/images/Web/main menu.png">
+                <h1 class="title">One Button Game ~ Fly Catcher</h1>
+                <p class="detail">In my <i>Creative Studio</i> module, I had an assignment to come up with a concept for a game that relys on clicking only one button. I chose 
+                    to make a cosy game called Fly Catcher. As you can see in the video example below, 
+                    the frogs tongue can be charged by <i>click and hold</i> and releasing the button releases the tongue. The frog has mutiple levels of 
+                    hungriness so the player has to catch the flies to keep it alive and earn coins. For adding extra interest to the 
+                    game, I came up with different types of flies that each have a different bonus after being caught and also <i>frog customisation</i> 
+                    where a player can use their collected coins to buy different frog colours, clothes or accesories for their frog. You can read more about how 
+                    I came up with the concept and details of the game in the concept document below.
+                </p>
+                <a target="_blank" rel="noopener noreferrer" id="concept-doc" href="assets/FlyCatcherConcept.pdf">Game Concept Document</a>
+            </div>
+
+            <div>
+                <h1 class="subtitle">Game Screencaps</h1>
+                <div class="row">
+                    <div class="column">
+                        <video controls> <source src="assets/images/Web/FlyCatcher.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+                        <img src="assets/images/Web/gameOver.png">
+                        <img src="assets/images/Web/SUMMER.png">
+                        <img src="assets/images/Web/shopScreen.png">
+                    </div>
+                    <div class="column">
+                        <video autoplay muted> <source src="assets/images/Web/ChargeGif_1.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+                        <img src="assets/images/Web/playScreen1.png">
+                        <img src="assets/images/Web/AUTUMN.png">
+                        <img src="assets/images/Web/outfitScreen.png">
+                        
+                    </div>
+                    <div class="column">
+                        <img src="assets/images/Web/pauseScreen.png">
+                        <img src="assets/images/Web/SPRING.png">
+                        <img src="assets/images/Web/WINTER.png">
+                        <img src="assets/images/Web/outfitScreen2.png">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/web.js"></script>
+    </body>

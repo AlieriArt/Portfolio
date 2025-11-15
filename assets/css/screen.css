@@ -10,7 +10,45 @@ body{
     min-height: 100vh;
     background-color: #FEE9FF;
     width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
+
+header{
+    min-height: 50px;
+}
+
+/* FOOTER */
+footer{
+    min-height: 50px;
+    width: 100%;
+    background-color: #D6FF5F;
+    padding: 2%;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
+    margin-top: 2%;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+}
+.footer-column{
+    flex: 33%; 
+    vertical-align: middle;
+}
+.footer-column img {
+    vertical-align: middle;
+    width: 100%;
+}
+.logo{
+    font-family: 'Astori', sans-serif;
+    font-size: 5vw;
+}
+
 
 /* BANNER */
 .banner{
@@ -32,6 +70,8 @@ body{
     transform: translate(-50%, -50%);
 }
 
+
+
 /* ICONS */
 #sm-icons{
     position: absolute; /* positioning of the icon group on top of banner*/
@@ -50,7 +90,6 @@ body{
     border-radius: 10px;
     background-color: #EDB0F1;
     padding: 2%;
-    color: white;
 }
 /* github icon css */
 #github{
@@ -95,7 +134,6 @@ body{
 ::-webkit-scrollbar-corner{
     background: #edffaa;
 }
-
 
 
 /* MENU */
@@ -148,6 +186,7 @@ a{
     display: none;
 }
 
+
 /* DIGITAL, TRADITIONAL, CONCEPT, MODELLING */
 .row {
     display: flex;
@@ -164,6 +203,12 @@ a{
     vertical-align: middle;
     width: 100%; /*making images fit the column by width*/
 }
+.column video {
+    margin-top: 10px; /*space on top of the images*/
+    vertical-align: middle;
+    width: 100%; /*making images fit the column by width*/
+}
+
 
 /* ABOUT PAGE */
 .container{
@@ -173,11 +218,19 @@ a{
     font-family: 'Agdasima', sans-serif;
 }
 
+.about{
+    font-family: 'Agdasima', sans-serif;
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 5%;
+    border-radius: 50px;
+    background-color: #EDFFAA;
+}
 #about-img{
-    width: 30%;
+    width: 25%;
     float: left;
 }
-
 #about-text{
     float: left;
     width: 70%;
@@ -186,6 +239,7 @@ a{
     text-align: center;
 }
 #name{
+    text-align: left;
     font-size: 3vw;
     margin-bottom: 2%;
 }
@@ -198,11 +252,37 @@ a{
 #apps-showcase{
     float: left;
     width: 70%;
-    margin-top: 8%;
+
     /* background-color: green; */
     padding: 0 15px;
     text-align: center;
 }
+
+#photoshop{
+    content: url("../images/icons/Photoshop.svg");
+    width: 5.5vw;
+    height: 5.5vw;
+    padding: 0.3%;
+}
+#after-effects{
+    content: url("../images/icons/AfterEffects.svg");
+    width: 5.5vw;
+    height: 5.5vw;
+    padding: 0.3%;
+}
+#krita{
+    content: url("../images/icons/Krita.svg");
+    width: 5.5vw;
+    height: 5.5vw;
+    padding: 0.3%;
+}
+#procreate{
+    content: url("../images/icons/Procreate.svg");
+    width: 5.5vw;
+    height: 5.5vw;
+    padding: 0.3%;
+}
+
 
 .app-row{
     display: flex;
@@ -218,14 +298,17 @@ a{
 /* colour of the project titles */
 .web-title{
     color: #D937E5;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
 }
 .grid-img-web{
-    margin-bottom: 10px;
+    margin-bottom: 0.5%;
 }
 .thumbnail{
     width: 40%;
     float: left;
-    margin-right: 15px;
+    margin-right: 1%;
 }
 #description{
     /* background-color: blue; */
@@ -235,18 +318,26 @@ a{
     font-size: 1.5vw;
     text-align: left;
 }
-
 .title{
     /* background-color: green; */
     text-align: left;
 }
-
 .detail{
     font-size: 1.5vw;
-    margin-top: 10px;
+    margin-top: 0.5%;
     text-align: left;
 }
-
+#concept-doc{
+    color: #98C21B;
+    text-decoration: underline;
+    font-size: 2vw;
+}
+#poem{
+    width: 59%;
+    margin-top: 1.5%;
+    /* background-color: red; */
+    float: right;
+}
 /* modal css */
 .modal {
     display: none;
