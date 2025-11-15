@@ -9,70 +9,70 @@ let left = document.getElementById("button-left");
 
 let conceptImages = [];
 let index = 0;
+let imageContainer = document.getElementById("concept-grid");
+let children = Array.from(imageContainer.children);
 
 // looping though the children of the grid container to get all divs
-function setUp(){
-    let imageContainer = document.getElementById("concept-grid");
-    let children = Array.from(imageContainer.children);
+function setUp() {
     let that = this;
-    for(let i=0; i < children.length; i++){
-        const CHILD = children[i];
-        const SRC = CHILD.children[0].src;
-        conceptImages.push(SRC);
-        CHILD.addEventListener("click", ()=>{
-            that.viewGallery(SRC, i);
-        });
+    for (let i = 0; i < children.length; i++) {
+        for (let j = 0; j < children[i].children.length; j++) {
+            for (let k = 0; k < children[i].children[j].children.length; k++) {
+                const CHILD = children[i].children[j].children[k];
+                const SRC = CHILD.src;
+                conceptImages.push(SRC);
+                CHILD.addEventListener("click", () => {
+                    that.viewGallery(SRC, conceptImages.indexOf(SRC));
+                });
+            }
+        };
     }
 }
 
-function viewGallery(src, order){
+function viewGallery(src, order) {
     index = order;
     modal.style.display = "block";
     modal.querySelector("#gallery-portrait").src = src;
-    console.log(src)
-    console.log(index)
-    if(index == 0){
+    if (index == 0) {
         left.style.display = "none";
     }
-    else if(index > 0){
+    else if (index > 0) {
         left.style.display = "block";
     }
-    if(index == 15){
+    if (index == conceptImages.length - 1) {
         right.style.display = "none";
     }
-    else if(index < 15){
+    else if (index < conceptImages.length - 1) {
         right.style.display = "block";
     }
 }
 
 //switching through gallery
-right.onclick = function(){
+right.onclick = function () {
     index++;
-    console.log(index)
     modal.querySelector("#gallery-portrait").src = conceptImages[index];
-    if(index > 0){
+    if (index > 0) {
         left.style.display = "block"
     }
-    if(index == 15){
-        right.style.display ="none";
+    if (index == conceptImages.length - 1) {
+        right.style.display = "none";
     }
 }
 
-left.onclick = function(){
+left.onclick = function () {
     index--;
-    console.log(index)
     modal.querySelector("#gallery-portrait").src = conceptImages[index];
-    if(index < 15){
+    if (index < conceptImages.length - 1) {
         right.style.display = "block"
     }
-    if(index == 0){
-        left.style.display ="none";
+    if (index == 0) {
+        left.style.display = "none";
     }
 }
 
 
 // When the user clicks on <span> (x), close the modal
-close.onclick = function() {
+close.onclick = function () {
     modal.style.display = "none";
 }
 

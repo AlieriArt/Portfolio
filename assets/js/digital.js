@@ -13,65 +13,66 @@ let imageContainer = document.getElementById("digital-grid");
 let children = Array.from(imageContainer.children);
 
 // looping though the children of the grid container to get all divs
-function setUp(){
+function setUp() {
     let that = this;
-    for(let i=0; i < children.length; i++){
-        const CHILD = children[i];
-        const SRC = CHILD.children[0].src;
-        digitalImages.push(SRC);
-        CHILD.addEventListener("click", ()=>{
-            that.viewGallery(SRC, i);
-        });
+    for (let i = 0; i < children.length; i++) {
+        for (let j = 0; j < children[i].children.length; j++) {
+            for (let k = 0; k < children[i].children[j].children.length; k++) {
+                const CHILD = children[i].children[j].children[k];
+                const SRC = CHILD.src;
+                digitalImages.push(SRC);
+                CHILD.addEventListener("click", () => {
+                    that.viewGallery(SRC, digitalImages.indexOf(SRC));
+                });
+            }
+        };
     }
 }
 
-function viewGallery(src, order){
+function viewGallery(src, order) {
     index = order;
     modal.style.display = "block";
     modal.querySelector("#gallery-portrait").src = src;
-    console.log(src)
-    console.log(index)
-    if(index == 0){
+    if (index == 0) {
         left.style.display = "none";
     }
-    else if(index > 0){
+    else if (index > 0) {
         left.style.display = "block";
     }
-    if(index == children.length-1){
+
+    if (index == digitalImages.length - 1) {
         right.style.display = "none";
     }
-    else if(index < children.length-1){
+    else if (index < digitalImages.length - 1) {
         right.style.display = "block";
     }
 }
 
 //switching through gallery
-right.onclick = function(){
+right.onclick = function () {
     index++;
-    console.log(index)
     modal.querySelector("#gallery-portrait").src = digitalImages[index];
-    if(index > 0){
+    if (index > 0) {
         left.style.display = "block"
     }
-    if(index == children.length-1){
-        right.style.display ="none";
+    if (index == digitalImages.length - 1) {
+        right.style.display = "none";
     }
 }
 
-left.onclick = function(){
+left.onclick = function () {
     index--;
-    console.log(index)
     modal.querySelector("#gallery-portrait").src = digitalImages[index];
-    if(index < children.length-1){
+    if (index < digitalImages.length - 1) {
         right.style.display = "block"
     }
-    if(index == 0){
-        left.style.display ="none";
+    if (index == 0) {
+        left.style.display = "none";
     }
-}   
+}
 
 // When the user clicks on <span> (x), close the modal
-close.onclick = function() {
+close.onclick = function () {
     modal.style.display = "none";
 }
 
