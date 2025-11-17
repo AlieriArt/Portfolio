@@ -31,14 +31,18 @@ footer{
     font-size: 1.5vw;
     color: white;
 }
+.footer-container{
+    width: 80%;
+    /* background-color: #98C21B; */
+    margin: auto;
+}
 .footer-row{
     display: flex;
     flex-wrap: wrap;
-    /* text-align: center; */
+    text-align: center;
 }
 .footer-column{
-    flex: 33%; 
-    vertical-align: middle;
+    flex: 33%;
 }
 .footer-column img {
     vertical-align: middle;
@@ -170,8 +174,8 @@ ul li a {
 li a.active {
     color: white;
     background-color: #764274;
-    /* border-left: solid 5px; 
-    border-right: solid 5px; */
+    border-left: solid 5px; 
+    border-right: solid 5px;
     font-weight: bold;
 }
 /* hover (does not vork on active menu part) */
@@ -222,7 +226,6 @@ a{
     padding: 10px;
     font-family: 'Agdasima', sans-serif;
 }
-
 .about{
     font-family: 'Agdasima', sans-serif;
     width: 90%;
@@ -238,6 +241,8 @@ a{
 #about-img{
     width: 25%;
     float: left;
+    /* background-color: #98C21B; */
+    margin-right: 1%;
 }
 #about-text{
     float: left;
@@ -251,50 +256,111 @@ a{
     font-size: 3vw;
     margin-bottom: 2%;
 }
-
 #about-me{
     font-size: 1.7vw;
     text-align: left;
 }
-
 #apps-showcase{
+    margin-top: 2%;
     float: left;
     width: 70%;
-
     /* background-color: green; */
-    padding: 0 15px;
     text-align: center;
 }
 
 #photoshop{
     content: url("../images/icons/Photoshop.svg");
-    width: 5.5vw;
-    height: 5.5vw;
+    width: 5vw;
+    height: 5vw;
     padding: 0.3%;
 }
 #after-effects{
     content: url("../images/icons/AfterEffects.svg");
-    width: 5.5vw;
-    height: 5.5vw;
+    width: 5vw;
+    height: 5vw;
     padding: 0.3%;
 }
 #krita{
     content: url("../images/icons/Krita.svg");
-    width: 5.5vw;
-    height: 5.5vw;
+    width: 5vw;
+    height: 5vw;
     padding: 0.3%;
 }
 #procreate{
     content: url("../images/icons/Procreate.svg");
-    width: 5.5vw;
-    height: 5.5vw;
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#blender{
+    content: url("../images/icons/Blender.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#maya{
+    content: url("../images/icons/Maya.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#html{
+    content: url("../images/icons/HTML.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#css{
+    content: url("../images/icons/CSS.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#js{
+    content: url("../images/icons/JS.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#c{
+    content: url("../images/icons/C++.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#python{
+    content: url("../images/icons/Python.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#figma{
+    content: url("../images/icons/Figma.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#canva{
+    content: url("../images/icons/Canva.svg");
+    width: 5vw;
+    height: 5vw;
+    padding: 0.3%;
+}
+#inkscape{
+    content: url("../images/icons/Inkscape.svg");
+    width: 5vw;
+    height: 5vw;
     padding: 0.3%;
 }
 
 
 .app-row{
     display: flex;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.app-column{
+    flex: 33%;
 }
 
 .app-icon{
@@ -346,6 +412,14 @@ a{
     /* background-color: red; */
     float: right;
 }
+.in-text-link{
+    font-size: 1.5vw;
+    font-family: 'Agdasima', sans-serif;
+    color: #764274;
+    text-decoration: underline;
+}
+
+
 /* modal css */
 .modal {
     display: none;
@@ -353,10 +427,9 @@ a{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-    background-color: rgba(35,3,51,0.5);
-    
+    background-color: rgba(35,3,51,0.5); 
 }
 
 .close{

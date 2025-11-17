@@ -26,10 +26,10 @@
             <a href="#" onclick="openMenu()" id="mobile-menu" class="fa fa-bars"></a>
             <nav>
                 <ul id="mylinks">
-                    <li><a href="about.html">HOME</a></li>
-                    <li><a class="active" href="index.html">DIGITAL ART</a></li>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="digital.html">DIGITAL ART</a></li>
                     <li><a href="traditional.html">TRADITIONAL ART</a></li>
-                    <li><a jh87href="concept.html">CONCEPT ART</a></li>
+                    <li><a href="concept.html">CONCEPT ART</a></li>
                     <li><a href="modeling.html">3D MODELLING</a></li>
                     <li><a href="web.html">PROJECTS</a></li>
                 </ul>
@@ -38,57 +38,65 @@
     </header>
 
     <body>
-        <div id="digital-grid">
-            <div class="row">
-                <div class="column">
-                    <img alt="digital painting of ghibli spirit" src="assets/images/2D/pileOfSpirits.png">
-                    <img alt="digital painting of Bianca Saltarelli" src="assets/images/2D/biancaSaltarelli.jpg">
-                    <img alt="digital painting of spa bath" src="assets/images/2D/bathTub.png">
-                    <img alt="digital painting of Greta Gill" src="assets/images/2D/greta.png">
-                    <img alt="digital painting of a glowing jelly fish" src="assets/images/2D/jelly.png">
-                    
-                </div>
-                <div class="column">
-                    <img alt="digital painting of ghibli spirit" src="assets/images/2D/cabbageSpirit.png">
-                    <img alt="digital painting of Emma Stone" src="assets/images/2D/emma.png">
-                    <img alt="digital painting of ghibli spirit" src="assets/images/2D/noFace.png">
-                    <img alt="digital painting of Carson Shaw and Greta Gill looking at each other" src="assets/images/2D/gretson.png">
-                    <img alt="digital painting of a balerina in green dress with long ginger hair" src="assets/images/2D/finalArt.png">
-                    <img alt="digital painting of a magical landscape" src="assets/images/2D/landscape.png">
-                </div>
-                <div class="column">
-                    <img alt="digital painting of ghibli spirit" src="assets/images/2D/duckSpirit.png">
-                    <img alt="digital painting of a woman with purple hair" src="assets/images/2D/cyyber.png">
-                    <img alt="digital painting of ghibli spirit" src="assets/images/2D/noFaceAngry.png">
-                    <img alt="digital painting of a pale blond woman with blue eyes" src="assets/images/2D/Bee.png">
-                    <img alt="digital painting of a glowing mushroom" src="assets/images/2D/glowingMushroom.png">
-                    <img alt="digital painting of a woman with short purple black hair" src="assets/images/2D/selfPotrait.png">
+        <div class="about">
+            <img id="about-img" src="assets/images/About/AboutPicture.png">
+            <div id="about-text">
+                <h1 id="name">ERIKA RECHTACKOVA</h1>
+                <p id="about-me">Hi, I'm Erika aka Alieri, a graduate with a bachelor in Interactive Digital Art and Design with a passion for character
+                    design and concept art. I love bringing interesting characters and intriguing stories to life under my hand in all kinds of
+                    media. I started with fine art and ceramics when I was a kid and later discovered the world of digital art.
+                </p>
+            </div>
+            <div id="apps-showcase">
+                <div class="app-row">
+                    <div class="app-column">
+                        <div class="app-row">
+                            <div id="photoshop"></div>
+                            <div id="after-effects"></div>
+                            <div id="krita"></div>
+                        </div>
+                        <div class="app-row">
+                            <div id="procreate"></div>
+                            <div id="blender"></div>
+                            <div id="maya"></div>
+                        </div>
+                    </div>
+                    <div class="app-column">
+                        <div class="app-row">
+                            <div id="html"></div>
+                            <div id="css"></div>
+                            <div id="js"></div>
+                        </div>
+                        <div class="app-row">
+                            <div id="c"></div>
+                            <div id="python"></div>
+                        </div>
+                    </div>
+                    <div class="app-column">
+                        <div class="app-row">
+                            <div id="figma"></div>
+                            <div id="canva"></div>
+                            <div id="inkscape"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-            <p id="button-left">◀</p>
-            <span class="close">X</span>
-            <p id="button-right">▶</p>
-            <img alt="digital painting of Emma Stone" id="gallery-portrait" src="assets/images/2D/emma.png">
-            </div>
-        </div>   
         <script src="assets/js/digital.js"></script>
     </body>
-
     <footer>
-        <div class="footer-row">
-            <div class="footer-column">
-                <div class="logo">|ALIERI|</div>
-            </div>
-            <div class="footer-column">
-                <div><b>Tel:</b> +33 45 35 72 62 / +420 604 688 007</div>
-                <div><b>Email:</b> art.of.alieri@gmail.com</div>
-            </div>
-            <div class="footer-column">
-                <div><b>Made by Alieri ♡</div>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <div class="logo"><a href="about.html">ALIERI</a></div>
+                </div>
+                <div class="footer-column">
+                    <div><b>Tel:</b> +33 45 35 72 62 / +420 604 688 007</div>
+                    <div><b>Email:</b> art.of.alieri@gmail.com</div>
+                </div>
+                <div class="footer-column">
+                    <div><b>Made by Alieri ♡</div>
+                </div>
             </div>
         </div>
     </footer>
