@@ -696,6 +696,9 @@ a{
         height: 10vw;
         padding: 0.3%;
     }
+    ul {
+        display: none;
+    }
     ul li a {
         background-color: #7F34E0;
         width: 100%;
