@@ -267,92 +267,11 @@ a{
     /* background-color: green; */
     text-align: center;
 }
-
-#photoshop{
-    content: url("../images/icons/Photoshop.svg");
+.about-icons{
     width: 5vw;
     height: 5vw;
     padding: 0.3%;
 }
-#after-effects{
-    content: url("../images/icons/AfterEffects.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#krita{
-    content: url("../images/icons/Krita.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#procreate{
-    content: url("../images/icons/Procreate.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#blender{
-    content: url("../images/icons/Blender.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#maya{
-    content: url("../images/icons/Maya.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#html{
-    content: url("../images/icons/HTML.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#css{
-    content: url("../images/icons/CSS.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#js{
-    content: url("../images/icons/JS.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#c{
-    content: url("../images/icons/C++.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#python{
-    content: url("../images/icons/Python.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#figma{
-    content: url("../images/icons/Figma.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#canva{
-    content: url("../images/icons/Canva.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-#inkscape{
-    content: url("../images/icons/Inkscape.svg");
-    width: 5vw;
-    height: 5vw;
-    padding: 0.3%;
-}
-
 
 .app-row{
     display: flex;
@@ -502,59 +421,7 @@ a{
     #about-me{
         font-size: 6vw;
     }
-    #photoshop{
-        width: 25vw;
-        height: 25vw;
-    }
-    #after-effects{
-        width: 25vw;
-        height: 25vw;
-    }
-    #krita{
-        width: 25vw;
-        height: 25vw;
-    }
-    #procreate{
-        width: 25vw;
-        height: 25vw;
-    }
-    #blender{
-        width: 25vw;
-        height: 25vw;
-    }
-    #maya{
-        width: 25vw;
-        height: 25vw;
-    }
-    #html{
-        width: 25vw;
-        height: 25vw;
-    }
-    #css{
-        width: 25vw;
-        height: 25vw;
-    }
-    #js{
-        width: 25vw;
-        height: 25vw;
-    }
-    #c{
-        width: 25vw;
-        height: 25vw;
-    }
-    #python{
-        width: 25vw;
-        height: 25vw;
-    }
-    #figma{
-        width: 25vw;
-        height: 25vw;
-    }
-    #canva{
-        width: 25vw;
-        height: 25vw;
-    }
-    #inkscape{
+    .about-icons{
         width: 25vw;
         height: 25vw;
     }
@@ -699,61 +566,10 @@ a{
     #about-me{
         font-size: 6vw;
     }
-    #photoshop{
+    .about-icons{
         width: 25vw;
         height: 25vw;
-    }
-    #after-effects{
-        width: 25vw;
-        height: 25vw;
-    }
-    #krita{
-        width: 25vw;
-        height: 25vw;
-    }
-    #procreate{
-        width: 25vw;
-        height: 25vw;
-    }
-    #blender{
-        width: 25vw;
-        height: 25vw;
-    }
-    #maya{
-        width: 25vw;
-        height: 25vw;
-    }
-    #html{
-        width: 25vw;
-        height: 25vw;
-    }
-    #css{
-        width: 25vw;
-        height: 25vw;
-    }
-    #js{
-        width: 25vw;
-        height: 25vw;
-    }
-    #c{
-        width: 25vw;
-        height: 25vw;
-    }
-    #python{
-        width: 25vw;
-        height: 25vw;
-    }
-    #figma{
-        width: 25vw;
-        height: 25vw;
-    }
-    #canva{
-        width: 25vw;
-        height: 25vw;
-    }
-    #inkscape{
-        width: 25vw;
-        height: 25vw;
+        padding: 0.3%;
     }
     #apps-showcase{
         width: 100%;
