@@ -342,34 +342,41 @@ a{
     height: 100%;
     overflow: hidden;
     background-color: rgba(51, 3, 51, 0.5); 
+    font-family: 'Astori', sans-serif;
 }
 
 .modal img{
-    vertical-align:middle;
+    display: block;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80vw;
+    max-height: 100vh;
 }
 
 .close{
-    color: #e4cdfe;
+    color: #ACBBA5;
     float: right;
-    font-size: 3.5vw;
+    font-size: 4vw;
     position: relative;
 }
 
 .close:hover, .close:focus{
-    color: #7F34E0;
+    color: #84937D;
     text-decoration: none;
     cursor: pointer;
     position: relative;
 }
 
 #button-right:hover, #button-left:hover{
-    color: #7F34E0;
+    color: #84937D;
     text-decoration: none;
     cursor: pointer;
 }
 
 #button-right{
-    color: #e4cdfe;
+    color: #ACBBA5;
     font-size: 4vw;
     position: absolute;
     top: 50%;
@@ -379,7 +386,7 @@ a{
 }
 
 #button-left{
-    color: #e4cdfe;
+    color: #ACBBA5;
     font-size: 4vw;
     position: absolute;
     top: 50%;
@@ -387,13 +394,6 @@ a{
     padding-left: 2%;
 }
 
-#gallery-portrait{
-    display: block;
-    margin: auto;
-    max-width: 80vw;
-    max-height: 100vh;
-
-}
 
 /* css for tablet */
 @media screen and (min-width: 600px) and (max-width: 800px) and (orientation: portrait){
