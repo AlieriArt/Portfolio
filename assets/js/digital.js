@@ -12,20 +12,16 @@ let index = 0;
 let imageContainer = document.getElementById("digital-grid");
 let children = Array.from(imageContainer.children);
 
-// looping though the children of the grid container to get all divs
-function setUp() {
+// looping though the children of the grid container to get all images
+function setUp(){
     let that = this;
-    for (let i = 0; i < children.length; i++) {
-        for (let j = 0; j < children[i].children.length; j++) {
-            for (let k = 0; k < children[i].children[j].children.length; k++) {
-                const CHILD = children[i].children[j].children[k];
-                const SRC = CHILD.src;
-                digitalImages.push(SRC);
-                CHILD.addEventListener("click", () => {
-                    that.viewGallery(SRC, digitalImages.indexOf(SRC));
-                });
-            }
-        };
+    for(let i=0; i < children.length; i++){
+        const CHILD = children[i];
+        const SRC = CHILD.src;
+        digitalImages.push(SRC);
+        CHILD.addEventListener("click", () => {
+            that.viewGallery(SRC, digitalImages.indexOf(SRC));
+        });
     }
 }
 
