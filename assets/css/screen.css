@@ -182,6 +182,7 @@ a{
 
 .grid-container img{
     width: 100%;
+    object-fit: cover;
     margin-bottom: 1em;
 }
 
@@ -629,11 +630,6 @@ a{
         height: 10vw;
     }
     
-    /* DIGITAL, TRADITIONAL, CONCEPT, MODELLING */
-    /* Create two equal columns that sits next to each other */
-    .column {
-        flex: 100%; 
-    }
 
     /* WEB */
     .web-title{
