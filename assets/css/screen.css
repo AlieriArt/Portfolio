@@ -179,11 +179,10 @@ a{
     columns: 300px;
     padding: 1em;
 }
-
 .grid-container img{
     width: 100%;
     object-fit: cover;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .grid-container-web{
@@ -194,6 +193,20 @@ a{
     width: 100%;
 }
 
+.grid-container-detail{
+    columns: 450px;
+    padding: 1em;
+}
+.grid-container-detail img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
+.grid-container-detail video{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
 
 /* ABOUT PAGE */
 .container{
