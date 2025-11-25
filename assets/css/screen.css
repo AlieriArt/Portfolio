@@ -121,7 +121,7 @@ footer{
 /* MENU */
 /* menu container */
 .menu{ 
-    margin-top: -5px;
+    margin-top: -5px; 
     width: 100%;
     font-family: 'Agdasima', sans-serif;
     font-size: 1.5vw;
@@ -169,6 +169,9 @@ a{
     color: white;
 }
 /* mobile menu not displayed when on bigger screen */
+.menu-container{
+    display: none;
+}
 #mobile-menu{
     display: none;
 }
@@ -299,9 +302,8 @@ a{
 
 
 /* WEB */
-/* colour of the project titles */
 .web-title{
-    color: #764274;
+    color: #764274; /* colour of the project titles */
     font-family: 'Agdasima', sans-serif;
     font-size: 2vw;
     font-weight: bold;
@@ -489,6 +491,7 @@ a{
         background-color: #7F34E0;
         width: 100%;
     }
+    
     #sm-icons{
         display: none;
         width: 100%;
@@ -611,15 +614,41 @@ a{
     }
 
     /* MENU */
+    .menu-container{
+        background-color: #9E779D;
+        display: block;
+        height: auto;
+
+    }
+    #menu-icon{
+        padding: 2%;
+        width: 12vw;
+        float: left;
+        /* background-color: #98C21B; */
+    }
     #mobile-menu{
         display: block;
         content: url("../images/icons/burger.svg");
-        position: absolute; /* positioning of the icon group on top of banner*/
-        top: 0%;
-        left: 0%;
-        width: 12vw;
-
-
+        /* width: 10vw; */
+        height: 10vw;
+        padding: 8%;
+    }
+    #sm-icons{
+        display: none;
+    }
+    #sm-icons-mobile{
+        /* display: block; */
+        padding: 2% 0%;
+        width: 33vw;
+        margin-left: auto; 
+        margin-right: 0;
+        /* background-color: #98C21B; */
+    }
+    .contact-icons{
+        margin-right: 1%;
+        width: 10vw;
+        height: 10vw;
+        padding: 2%;
     }
     ul {
         display: none;
@@ -629,19 +658,7 @@ a{
         font-size: 5vw;
         width: 100vw;
     }
-    #sm-icons{
-        display: none;
-        width: 40%;
-        /* background-color: antiquewhite; */
-        position: absolute; /* positioning of the icon group on top of banner*/
-        top: 75%;
-        left: 40%;
-        font-size: 5vw;
-    }
-    .contact-icons{
-        width: 10vw;
-        height: 10vw;
-    }
+    
     
 
     /* WEB */
