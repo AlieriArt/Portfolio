@@ -31,23 +31,6 @@ footer{
     font-size: 1.5vw;
     color: white;
 }
-.footer-container{
-    width: 80%;
-    /* background-color: #98C21B; */
-    margin: auto;
-}
-.footer-row{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.footer-column{
-    flex: 33%;
-}
-.footer-column img {
-    vertical-align: middle;
-    width: 100%;
-}
 .logo{
     font-family: 'Astori', sans-serif;
     font-size: 5vw;
@@ -456,17 +439,7 @@ a{
     /* FOOTER */
     footer{
         font-size: 4vw;
-    }
-    .footer-container{
-        width: 100%;
-    }
-    .footer-column{
-        flex: 100%;
-        margin-top: 5%;
-    }
-    .footer-column img {
-        vertical-align: middle;
-        width: 100%;
+        text-align: center
     }
     .logo{
         font-family: 'Astori', sans-serif;
@@ -596,17 +569,7 @@ a{
     /* FOOTER */
     footer{
         font-size: 4vw;
-    }
-    .footer-container{
-        width: 100%;
-    }
-    .footer-column{
-        flex: 100%;
-        margin-top: 5%;
-    }
-    .footer-column img {
-        vertical-align: middle;
-        width: 100%;
+        text-align: center;
     }
     .logo{
         font-family: 'Astori', sans-serif;
